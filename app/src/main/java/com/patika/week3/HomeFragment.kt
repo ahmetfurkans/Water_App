@@ -1,5 +1,7 @@
 package com.patika.week3
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.content.res.Resources
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,12 +15,14 @@ import kotlin.math.roundToInt
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     private var targetWater = 0.0
+    private lateinit var preferences: SharedPreferences
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentHomeBinding.inflate(inflater)
+        preferences = requireContext().getSharedPreferences("com.patika.week3", Context.MODE_PRIVATE)
         return binding.root
     }
 
