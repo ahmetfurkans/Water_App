@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        tools:context=".HomeFragment">
+
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#03A9F4"
+            android:contentDescription="@string/water_level_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/header1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="94dp"
+            android:text="@string/merhaba_nbug_n_su_i_tin_mi"
+            android:textColor="#ffffff"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/header2"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/bug_nk_su_ihtiyac_n_kar_lamak_i_in_n3_litre_daha_su_i_melesin"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <LinearLayout
+                style="@style/bottle_card_linearLayout"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/smallBottle"
+                    style="@style/bottle_card_button"
+                    app:icon="@drawable/ic_small"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="48dp" />
+
+                <TextView
+                    style="@style/bottle_card_textView"
+                    android:text="@string/_200_ml" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/bottle_card_linearLayout">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mediumBottle"
+                    style="@style/bottle_card_button"
+                    app:icon="@drawable/ic_medium"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="48dp" />
+
+                <TextView
+                    style="@style/bottle_card_textView"
+                    android:text="@string/_500_ml" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                style="@style/bottle_card_linearLayout"
+                android:layout_marginStart="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/bigBottle"
+                    style="@style/bottle_card_button"
+                    app:icon="@drawable/ic_big"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="48dp" />
+
+                <TextView
+                    style="@style/bottle_card_textView"
+                    android:text="@string/_1000_ml" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/clearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/clear_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_clear" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

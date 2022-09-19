@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Week3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bug_nk_su_ihtiyac_n_kar_lamak_i_in_n3_litre_daha_su_i_melesin">Bugünkü su ihtiyacını karşılamak için \n3 litre daha su içmelesin.</string>
+    <string name="merhaba_nbug_n_su_i_tin_mi">Merhaba! \nBugün su içtin mi?</string>
+    <string name="water_level_background">water level background</string>
+    <string name="_500_ml">500 ml</string>
+    <string name="_200_ml">200 ml</string>
+    <string name="_1000_ml">1000 ml</string>
+    <string name="clear_icon">Clear icon</string>
+</resources>
